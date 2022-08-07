@@ -102,5 +102,5 @@
  print(a)
  print(b)
 
-print(12*16)
+
 
