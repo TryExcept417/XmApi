@@ -1,0 +1,20 @@
+a="b"
+"""如果有多种错误类型，except写具体错误，先覆盖错误，然后统一如下处理"""
+
+try:
+	int(a)
+	print(2/a)
+except ValueError:
+	print("有确定的值错误执行的代码")
+except Exception as error :
+	print("其他错误类型失败后执行的代码%s" %error)
+else:
+	print("成功后执行的代码")
+finally:
+	print("不管成功与失败都会执行的代码")
+
+#异常传递：只需要在主程序中捕获异常，不需要在函数内部捕获异常
+
+
+
+	
